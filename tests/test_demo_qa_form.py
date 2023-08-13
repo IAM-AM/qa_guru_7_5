@@ -36,19 +36,15 @@ def test_student_sign_up():
 
     browser.element('#example-modal-sizes-title-lg').should(have.exact_text(
         'Thanks for submitting the form'))
-    browser.element('.table').should(have.text('Jack'
-                                               and 'Sparrow'
-                                               and 'Jack@pirate.com'
-                                               and 'Jack@pirate.com'
-                                               and 'Male'
-                                               and '2960411232'
-                                               and '20 June,1900'
-                                               and 'Economics'
-                                               and 'Reading'
-                                               and 'test_image.jpeg'
-                                               and '1301 K Street NW Washington, DC 20071.'
-                                               and 'NCR Noida'
-                                               ))
-
-
+    browser.element('.table').should(have.text('Jack'))
+    browser.element('.table').should(have.text('Sparrow'))
+    browser.element('.table').should(have.text('Jack@pirate.com'))
+    browser.element('.table').should(have.text('Male'))
+    browser.element('.table').should(have.text('2960411232'))
+    browser.element('.table').should(have.text('20 June,1900'))
+    browser.element('.table').should(have.text('Economics'))
+    browser.element('.table').should(have.text('Reading'))
+    browser.element('.table').should(have.text('test_image.jpeg'))
+    browser.element('.table').should(have.text('1301 K Street NW Washington, DC 20071.'))
+    browser.element('.table').should(have.text('NCR Noida'))
 
